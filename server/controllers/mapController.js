@@ -1,37 +1,3 @@
-// // server/controllers/mapController.js
-// import Map from '../models/Map.js';
-
-// // Upload a new map image
-// export const uploadMapImage = async (req, res) => {
-//   const mapImage = req.file ? req.file.filename : null;
-
-//   if (!mapImage) {
-//     return res.status(400).send('Map image is required');
-//   }
-
-//   try {
-//     const map = new Map({ filename: mapImage });
-//     await map.save();
-//     res.json({ message: 'Map image uploaded and saved successfully', filename: mapImage });
-//   } catch (err) {
-//     console.error('Error saving map image to database:', err);
-//     res.status(500).send('Internal Server Error');
-//   }
-// };
-
-// // Fetch current map images
-// export const getMapImages = async (req, res) => {
-//   try {
-//     const maps = await Map.find();
-//     res.json(maps);
-//   } catch (err) {
-//     console.error('Error fetching maps:', err);
-//     res.status(500).send('Internal Server Error');
-//   }
-// };
-
-
-
 import Map from '../models/Map.js';
 import multer from 'multer';
 import path from 'path';

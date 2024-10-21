@@ -1,20 +1,3 @@
-// // server/models/Marker.js
-// import mongoose from 'mongoose';
-
-// const markerSchema = new mongoose.Schema({
-//   lat: Number,
-//   lng: Number,
-//   title: String,
-//   description: String,
-//   image: String,
-//   mapId: { type: mongoose.Schema.Types.ObjectId, ref: 'Map' },
-// });
-
-// const Marker = mongoose.model('Marker', markerSchema);
-// export default Marker;
-
-
-// Marker.js
 import mongoose from 'mongoose';
 
 const markerSchema = new mongoose.Schema({
