@@ -24,7 +24,7 @@ const PanoramicViewer = ({ imageUrl }) => {
   }, [imageUrl]);
 
   return (
-    <div id="pano" style={{ position: 'absolute', width: '100%', height: '500px' }} ref={viewerRef}></div>
+    <div id="pano" style={{ position: 'absolute', width: '450px', height: '170px', borderRadius: '5px' }} ref={viewerRef}></div>
   );
 };
 
